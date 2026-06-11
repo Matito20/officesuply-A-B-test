@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfficeSupply Online - Kit Escritório Premium (Variante)</title>
+    <link rel="stylesheet" href="style-control.css">
+    <style>
+        /* ===== VARIANTE B: Elementos de Prova Social e Urgência ===== */
+
+        .badge-mais-vendido {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 0.85em;
+            font-weight: bold;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .rating-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .stars {
+            color: #f39c12;
+            font-size: 1.3em;
+            letter-spacing: 2px;
+        }
+
+        .rating-text {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .rating-text strong {
+            color: #333;
+        }
+
+        .stock-urgency {
+            background-color: #fff8e1;
+            border-left: 4px solid #f39c12;
+            padding: 10px 14px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+            font-size: 0.95em;
+            color: #7d5a00;
+        }
+
+        .stock-urgency span {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .social-proof {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .social-proof-icon {
+            font-size: 1.2em;
+        }
+
+        .add-to-cart-btn-variant {
+            background-color: #e67e22;
+            color: white;
+            padding: 16px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.25em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            width: 100%;
+            max-width: 380px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .add-to-cart-btn-variant:hover {
+            background-color: #cf6d17;
+            transform: scale(1.02);
+        }
+
+        .btn-subtext {
+            font-size: 0.8em;
+            color: #27ae60;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .btn-subtext::before {
+            content: "✔ ";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OfficeSupply Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-detail">
+            <div class="product-image">
+                <img src="img001.jpeg" alt="Kit Escritório Premium">
+            </div>
+            <div class="product-info">
+
+                <!-- NOVO: Badge de destaque -->
+                <span class="badge-mais-vendido">⭐ Mais Vendido da Categoria</span>
+
+                <h2 class="product-title">Kit Escritório Premium Clássico</h2>
+                <p class="product-category">Categoria: Kits Essenciais</p>
+
+                <!-- NOVO: Avaliação com estrelas -->
+                <div class="rating-container">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text"><strong>4,8</strong> — 312 avaliações</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price">R$ 299,90</span>
+                </div>
+
+                <!-- NOVO: Urgência de estoque -->
+                <div class="stock-urgency">
+                    ⚠ Restam apenas <span>7 unidades</span> em estoque!
+                </div>
+
+                <!-- NOVO: Prova social -->
+                <div class="social-proof">
+                    <span class="social-proof-icon">🔥</span>
+                    <span>23 pessoas compraram este produto nas últimas 24 horas</span>
+                </div>
+
+                <p class="product-description">
+                    Um kit completo com itens essenciais de alta qualidade para o seu dia a dia no escritório. Inclui canetas, cadernos, post-its e organizadores. Perfeito para quem busca funcionalidade.
+                </p>
+
+                <!-- NOVO: Botão com cor de destaque e subtexto -->
+                <button class="add-to-cart-btn-variant">🛒 Adicionar ao Carrinho</button>
+                <span class="btn-subtext">Frete grátis para compras acima de R$ 250,00</span>
+
+                <div class="product-features">
+                    <h3>Características:</h3>
+                    <ul>
+                        <li>Canetas esferográficas de ponta fina</li>
+                        <li>Caderno capa dura A5</li>
+                        <li>Bloco de notas adesivas</li>
+                        <li>Organizador de mesa compacto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section class="featured-products">
+            <h2>Outros Produtos que Você Pode Gostar</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth">
+                    <h3>Mouse Ergonômico Bluetooth Silence</h3>
+                    <p class="card-category">Categoria: Tecnologia Essencial</p>
+                    <p class="card-price">R$ 149,90</p>
+                    <button class="add-to-cart-btn-small">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 OfficeSupply Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
